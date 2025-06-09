@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KRD.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35e31c6dafaab672e89a2eb9e1e50040b525c803")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a88fa1c914d16b8090c374ec80a583e9745a937")]
 [assembly: System.Reflection.AssemblyProductAttribute("KRD.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KRD.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

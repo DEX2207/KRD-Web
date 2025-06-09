@@ -10,4 +10,6 @@ public class Car
     public string Generation { get; set; }
     public string Config {get;set;}
     public Color Color { get; set; }
+
+    public ICollection<CarOption> CarOptions { get; set;}
 }
