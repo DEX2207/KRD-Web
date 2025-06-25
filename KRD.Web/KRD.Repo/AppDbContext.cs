@@ -3,7 +3,7 @@ using KRD.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace KRD.Data;
+namespace KRD.Repo;
 
 public class AppDbContext:DbContext
 {
@@ -68,9 +68,9 @@ public class AppDbContext:DbContext
                     .WithMany()
                     .HasForeignKey(c => c.CarId);
         
-                modelBuilder.HasPostgresEnum<Color>("color");
-                modelBuilder.HasPostgresEnum<OptionType>("option_type");
-                modelBuilder.HasPostgresEnum<Status>("status");
+                modelBuilder.HasPostgresEnum<Color>("public");
+                modelBuilder.HasPostgresEnum<OptionType>("public");
+                modelBuilder.HasPostgresEnum<Status>("public");
                 
                 modelBuilder.Entity<OrderStatus>()
                     .Property(o => o.Status)

@@ -1,6 +1,10 @@
-using KRD.Data;
+using KRD.Repo;
 using KRD.Data.Enum;
+using KRD.Service;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using KRD.Service.Vallidators;
 using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,9 +12,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 //builder.Services.AddControllersWithViews();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(fv=>
+{
+    fv.RegisterValidatorsFromAssemblyContaining<OrderValidator>();
+    //fv.RegisterValidatorsFromAssemblyContaining<ContactValidator>();
+    //fv.RegisterValidatorsFromAssemblyContaining<ClientValidator>();
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
 
 NpgsqlConnection.GlobalTypeMapper.MapEnum<Color>("color");
 NpgsqlConnection.GlobalTypeMapper.MapEnum<OptionType>("option_type");
@@ -24,6 +34,12 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connect
     npgsqlOptions.MapEnum<OptionType>("option_type");
     npgsqlOptions.MapEnum<Status>("status");
 }));
+
+builder.Services.AddScoped<ICarSearchService,CarSearchService>();
+builder.Services.AddScoped<IOrderService,OrderService>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<AddressValidationService>();
 
 var app = builder.Build();
 

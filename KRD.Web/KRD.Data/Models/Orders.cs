@@ -8,5 +8,5 @@ public class Orders
     public string BuyerAddress { get; set; }
     public int ContactId { get; set; }
     public int OrderStatusId { get; set; }
-    public string PaymentInvoce { get; set; }
+    public int PaymentInvoce { get; set; }
 }

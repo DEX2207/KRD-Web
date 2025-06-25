@@ -7,6 +7,7 @@ public class Option
     public int Id { get; set; }
     public OptionType OptionType { get; set; }
     public bool OptionStatus { get; set; }
+    public int OptionPrice { get; set; }
     
     public ICollection<CarOption> CarOptions { get; set; }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KRD.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a88fa1c914d16b8090c374ec80a583e9745a937")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2646c1531a31b244246f949f319f5c1ab2d6fc15")]
 [assembly: System.Reflection.AssemblyProductAttribute("KRD.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KRD.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRD.Web", "KRD.Web\KRD.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRD.Data", "KRD.Data\KRD.Data.csproj", "{3E4B0DD5-45C3-4DFC-A0FB-C3BF551FD4F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRD.Repo", "KRD.Repo\KRD.Repo.csproj", "{726DC18A-36A4-4375-8D78-72492F14D6B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KRD.Service", "KRD.Service\KRD.Service.csproj", "{AF0324D8-6EC3-43E5-B101-8B3C3C14E319}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{3E4B0DD5-45C3-4DFC-A0FB-C3BF551FD4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E4B0DD5-45C3-4DFC-A0FB-C3BF551FD4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E4B0DD5-45C3-4DFC-A0FB-C3BF551FD4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{726DC18A-36A4-4375-8D78-72492F14D6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{726DC18A-36A4-4375-8D78-72492F14D6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{726DC18A-36A4-4375-8D78-72492F14D6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{726DC18A-36A4-4375-8D78-72492F14D6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0324D8-6EC3-43E5-B101-8B3C3C14E319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0324D8-6EC3-43E5-B101-8B3C3C14E319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0324D8-6EC3-43E5-B101-8B3C3C14E319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0324D8-6EC3-43E5-B101-8B3C3C14E319}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
