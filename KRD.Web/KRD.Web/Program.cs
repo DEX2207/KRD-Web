@@ -2,7 +2,6 @@ using KRD.Repo;
 using KRD.Data.Enum;
 using KRD.Service;
 using Microsoft.EntityFrameworkCore;
-using FluentValidation;
 using FluentValidation.AspNetCore;
 using KRD.Service.Vallidators;
 using Npgsql;
@@ -15,8 +14,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddFluentValidation(fv=>
 {
     fv.RegisterValidatorsFromAssemblyContaining<OrderValidator>();
-    //fv.RegisterValidatorsFromAssemblyContaining<ContactValidator>();
-    //fv.RegisterValidatorsFromAssemblyContaining<ClientValidator>();
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

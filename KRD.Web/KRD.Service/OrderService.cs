@@ -2,7 +2,6 @@ using KRD.Data.Enum;
 using KRD.Data.Models;
 using KRD.Repo;
 using KRD.Service.Vallidators;
-using Microsoft.EntityFrameworkCore;
 
 namespace KRD.Service;
 

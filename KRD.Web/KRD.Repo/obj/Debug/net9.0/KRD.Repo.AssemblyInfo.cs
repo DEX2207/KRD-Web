@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KRD.Repo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2646c1531a31b244246f949f319f5c1ab2d6fc15")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6bb30ac7b61f3f96f685e7cc588d57ffafed19")]
 [assembly: System.Reflection.AssemblyProductAttribute("KRD.Repo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KRD.Repo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
